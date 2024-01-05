@@ -1,0 +1,14 @@
+create database nishant;
+use nishant;
+create table nish_1
+(roll_no int(20) NOT NULL,
+name varchar(20),
+book_code int(20) NOT NULL,
+date_of_issue varchar(20) NOT NULL,
+date_of_submission varchar(20)
+);
+insert into nish_1 values(1,"Nishant", 2345,"11/02/2023","11/03/2023");
+insert into nish_1 values(2,"abhishek", 2456,"23/02/2023","23/03/2023");	
+alter table nish_1 add primary key (roll_no);
+desc nish_1;
+select*from nish_1;
